@@ -1,0 +1,61 @@
+<!--
+  Generated template for the SectionCPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>Bahagian C - AKIBATNYA </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content padding>
+  <form (ngSubmit)="seterusnya()" [formGroup]="someForm"> 
+    <div class="description">
+      1. Disfungsi emosi negatif
+      <ul>
+        <li>
+          keresahan/ketakutan
+        </li>
+        <li>
+          malu
+        </li>
+        <li>
+          kemarahan
+        </li>
+        <li>
+          bersalah
+        </li>
+        <li>
+          kemurungan/mood yang tertekan
+        </li>
+        <li>
+          cemburu bermasalah
+        </li>
+        <li>
+          iri hati bermasalah
+        </li>
+        <li>
+          sakit hati
+        </li>
+      </ul>
+      2. Tingkah laku maladaptif
+      <ul>
+        <li>
+          mengelakkan sosial
+        </li>
+        <li>
+          tidak menjaga diri sendiri , contoh: tidak bersenam, tidak berehat
+        </li>
+        <li>
+          menjadi agresif
+        </li>
+      </ul>
+    </div>
+    <ion-item>
+      <ion-textarea placeholder="Nyatakan emosi negatif dan tingkah laku maladaptif" rows="4" [(ngModel)]="answer" name="answer" formControlName="answer"></ion-textarea>
+    </ion-item>
+    <button ion-button class="next" type="submit" [disabled]="!someForm.valid">Seterusnya</button>
+  </form>
+</ion-content>

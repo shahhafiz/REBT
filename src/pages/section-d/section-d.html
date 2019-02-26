@@ -1,0 +1,51 @@
+<!--
+  Generated template for the SectionDPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>Bahagian D - PERTIKAIAN </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content padding>
+  <form (ngSubmit)="seterusnya()" [formGroup]="someForm"> 
+    <div class="description">
+      Pertikaian kepercayaan tidak rasional kamu. <br>
+      untuk mengubah kepercayaan tidak rasional anda, tanya diri anda:
+      <ul>
+        <li>
+          ke manakah kepercayaan ini membawa saya?
+        </li>
+        <li>
+          adakah ia membantu atau membawa saya kepada masalah?
+        </li>
+        <li>
+          dimanakah bukti untuk menyokong kepercayaan tidak rasional saya?
+          <ul>
+            <li>
+              adakah ia betul-betul mengerikan (seteruk ia boleh jadi)?
+            </li>
+            <li>
+              saya betul-betul tak boleh tahan ke?
+            </li>
+            <li>
+              adakah saya secara keseluruhannya orang yang jahat?
+            </li>
+          </ul>
+        </li>
+        <li>
+          adakah ia logik?<br>
+          adakah ia mengikut keutamaan saya?
+        </li>
+
+      </ul> 
+    </div>
+    <ion-item>
+      <ion-textarea placeholder="Jawapan" rows="4" [(ngModel)]="answer" name="answer" formControlName="answer"></ion-textarea>
+    </ion-item>
+    <button ion-button class="next" type="submit" [disabled]="!someForm.valid">Seterusnya</button>
+  </form>
+</ion-content>

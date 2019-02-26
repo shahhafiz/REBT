@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ReviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>Rumusan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-label>{{answers.tarikh | date: "dd/MM/yyyy , HH:mm a"}}</ion-label>
+  <h2>Bahagian A</h2>
+  <p>{{answers.jawapanA}}</p>
+  <hr>
+  <h2>Bahagian B</h2>
+  <p>{{answers.jawapanB}}</p>
+  <hr>
+  <h2>Bahagian C</h2>
+  <p>{{answers.jawapanC}}</p>
+  <hr>
+  <h2>Bahagian D</h2>
+  <p>{{answers.jawapanD}}</p>
+  <hr>
+  <h2>Bahagian E</h2>
+  <p>{{answers.jawapanE}}</p>
+  <hr>
+  <h2>Bahagian F</h2>
+  <p>{{answers.jawapanF}}</p>
+  <hr>
+  <h2>Bahagian G</h2>
+  <p>{{answers.jawapanG}}</p>
+  
+  <button ion-button class="halamanUtama" (click)="halamanUtama()">Halaman Utama</button>
+  
+</ion-content>

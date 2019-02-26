@@ -1,0 +1,61 @@
+<!--
+  Generated template for the SectionFPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title>Bahagian F - BERFUNGSI </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content padding>
+  <form (ngSubmit)="seterusnya()" [formGroup]="someForm"> 
+    <div class="description">
+      Kefungsian utama/Emosi sihat dan adaptif/Tingkah laku mebantu
+      <ul>
+        <li>
+          kebimbangan
+        </li>
+        <li>
+          kekecewaan
+        </li>
+        <li>
+          kemarahan/kegusaran yang sihat
+        </li>
+        <li>
+          penyesalan
+        </li>
+        <li>
+          kesedihan
+        </li>
+        <li>
+          kebimbangan yang sihat dalam perhubungan
+        </li>
+        <li>
+          iri hati yang sihat
+        </li>
+        <li>
+          kedukaan
+        </li>
+      </ul> 
+      Tingkah laku adaptif membantu
+      <ul>
+        <li>
+          berjumpa kawan-kawan/mencari sokongan
+        </li>
+        <li>
+          bersenam
+        </li>
+        <li>
+          tingkah laku asertif
+        </li>
+      </ul>
+    </div>
+    <ion-item>
+      <ion-textarea placeholder="Jawapan" rows="4" [(ngModel)]="answer" name="answer" formControlName="answer"></ion-textarea>
+    </ion-item>
+    <button ion-button class="next" type="submit" [disabled]="!someForm.valid">Seterusnya</button>
+  </form>
+</ion-content>

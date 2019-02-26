@@ -1,0 +1,50 @@
+page-home {
+    h1{
+        text-align: center;
+        font-size: 10rem;
+        margin-top: 5rem;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li{
+        padding: 5px;
+    }
+
+    .middle{
+        padding: 10px;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+    }
+
+    button{
+        width: 50%;
+    }
+
+    .scroll-content{
+        background-image: url('../../images/love-01.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .title{
+        position: relative;
+        top: 80px;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+
+
+
+
+
