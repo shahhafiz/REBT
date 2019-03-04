@@ -10,10 +10,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="background">
   <form (ngSubmit)="seterusnya()" [formGroup]="someForm"> 
     <div class="description">
-      Apa yang sangat mengganggu diriku?  
+      Apa yang sangat mengganggu diriku?
       <ul>
         <li>
             Boleh secara dalaman atau luaran, nyata atau bayangan 
@@ -26,6 +26,6 @@
     <ion-item>
       <ion-textarea placeholder="Masukkan peristiwa" rows="4" [(ngModel)]="answer" name="answer" formControlName="answer"></ion-textarea>
     </ion-item>
-    <button ion-button class="next" type="submit" [disabled]="!someForm.valid">Seterusnya</button>
+    <button ion-button clear class="next" type="submit" [disabled]="!someForm.valid">Seterusnya</button>
   </form>
 </ion-content>

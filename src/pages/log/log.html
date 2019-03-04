@@ -11,13 +11,13 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list *ngFor="let answer of answers">
+  <!-- <ion-list *ngFor="let answer of answers">
   <ion-item style="font-size: 2rem;">
     <ion-label>{{answer.tarikh | date: "dd/MM/yyyy , HH:mm a"}}</ion-label>
     <button ion-button small item-end (click)="show(answer)"> <ion-icon name="md-eye"></ion-icon></button>
     <button ion-button small item-end (click)="delete(answer.tarikh)"><ion-icon name="trash"></ion-icon>
     </button>
-  </ion-item>
+  </ion-item> -->
       
   
     
@@ -27,5 +27,14 @@
     <ion-item>{{answer.jawapanD}}</ion-item>
     <ion-item>{{answer.jawapanE}}</ion-item>
     <ion-item>{{answer.jawapanF}}</ion-item> -->
-  </ion-list>
+  <!-- </ion-list> -->
+
+  <ion-card *ngFor="let answer of answers">
+    <ion-card-content style="font-size: 2rem;">
+      <ion-label>{{answer.tarikh | date: "dd/MM/yyyy , HH:mm a"}}</ion-label>
+      <button ion-button small item-end (click)="show(answer)"> <ion-icon name="md-eye"></ion-icon></button>
+      <button ion-button small item-end (click)="delete(answer.tarikh)"><ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
