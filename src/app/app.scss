@@ -53,7 +53,8 @@ ion-content {
     box-shadow: inset 0 0 0 1000px rgba(245, 242, 242, 0.863);
     background-size: cover;
     background-repeat: no-repeat;
-  
+    background-attachment: fixed;
+    // --background: url('../../assets/imgs/scott-webb-199470-unsplash.jpg') 0 0/100% 100% no-repeat;
 }
 
 .item-md {

@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": true,
@@ -25,6 +25,7 @@
     "@ionic-native/sqlite": "^5.0.0",
     "@ionic-native/status-bar": "~4.18.0",
     "@ionic/storage": "2.2.0",
+    "cordova": "^8.1.2",
     "cordova-android": "7.1.4",
     "cordova-ios": "4.5.5",
     "cordova-plugin-device": "^2.0.2",

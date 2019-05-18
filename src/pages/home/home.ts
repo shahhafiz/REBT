@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
+
+// import { SectionAPage } from '../section-a/section-a';
 // import { Storage } from "@ionic/storage";
+
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
